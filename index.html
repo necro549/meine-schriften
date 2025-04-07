@@ -3,48 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Schriftgenerator mit Livevorschau</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: auto;
-            text-align: center;
-        }
-
-        #preview-text {
-            font-size: 24px;
-            margin-top: 20px;
-        }
-
-        select {
-            padding: 10px;
-            font-size: 16px;
-        }
-    </style>
+    <title>Schriftgenerator mit Live-Vorschau</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Schriftgenerator mit Livevorschau</h1>
-        
-        <!-- Dropdown-Menü zur Auswahl der Schrift -->
-        <label for="font-select">Wähle eine Schriftart:</label>
-        <select id="font-select">
-            <option value="meine-schrift">Meine Schrift</option>
-            <!-- Weitere Schriftarten können hier hinzugefügt werden -->
-        </select>
-        
-        <div id="preview-text">
-            Dies ist eine Livevorschau der ausgewählten Schriftart.
+        <h1>Schriftgenerator mit Live-Vorschau</h1>
+        <div class="input-group">
+            <label for="input-text">Text eingeben:</label>
+            <input type="text" id="input-text" placeholder="Gib deinen Text hier ein...">
+        </div>
+        <div class="input-group">
+            <label for="font-select">Schriftart auswählen:</label>
+            <select id="font-select">
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Schriftart 1">Schriftart 1</option>
+                <option value="Schriftart 2">Schriftart 2</option>
+                <option value="Schriftart 3">Schriftart 3</option>
+                <option value="Schriftart 4">Schriftart 4</option>
+                <option value="Schriftart 5">Schriftart 5</option>
+                <option value="Schriftart 6">Schriftart 6</option>
+                <option value="Schriftart 7">Schriftart 7</option>
+                <option value="Schriftart 8">Schriftart 8</option>
+                <option value="Schriftart 9">Schriftart 9</option>
+                <option value="Schriftart 10">Schriftart 10</option>
+                <option value="Schriftart 11">Schriftart 11</option>
+                <option value="Schriftart 12">Schriftart 12</option>
+                <option value="Schriftart 13">Schriftart 13</option>
+                <option value="Schriftart 14">Schriftart 14</option>
+            </select>
+        </div>
+        <div class="output">
+            <h2>Live-Vorschau:</h2>
+            <div id="preview"></div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
-</html>
