@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schriftgenerator mit Livevorschau</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+
+        #preview-text {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Schriftgenerator mit Livevorschau</h1>
+        
+        <!-- Dropdown-Menü zur Auswahl der Schrift -->
+        <label for="font-select">Wähle eine Schriftart:</label>
+        <select id="font-select">
+            <option value="meine-schrift">Meine Schrift</option>
+            <!-- Weitere Schriftarten können hier hinzugefügt werden -->
+        </select>
+        
+        <div id="preview-text">
+            Dies ist eine Livevorschau der ausgewählten Schriftart.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
